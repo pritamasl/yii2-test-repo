@@ -1,9 +1,9 @@
 <?php
-/* @var $this yii\web\View */
-?>
-<h1>test/index</h1>
 
-<p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
-</p>
+use frontend\votewidget\VoteWidget;
+
+$fakedModel = (object)['title'=> 'A Product','image'=>'http://placehold.it/350x150'];
+
+?>
+
+<?= VoteWidget::widget(['model' => $fakedModel]);
